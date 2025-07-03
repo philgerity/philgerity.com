@@ -115,7 +115,7 @@ const Contact = () => {
   return (
     <section id="contact" className="section-height py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 section-modern">
-        <h2 className="text-4xl font-bold text-center mb-12">Get in Touch</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Get in Touch</h2>
         
         {/* Social Links */}
         <div className="max-w-2xl mx-auto mb-8">
@@ -126,7 +126,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="flex justify-center space-x-8 mb-12">
+          <div className="flex justify-center space-x-6 md:space-x-8 mb-12">
             {socialLinks.map((social) => (
               <a
                 key={social.name}
@@ -136,7 +136,7 @@ const Contact = () => {
                 className={`text-gray-600 transition-all duration-300 transform hover:scale-110 ${social.hoverColor}`}
                 aria-label={social.name}
               >
-                <social.icon className="w-8 h-8" />
+                <social.icon className="w-7 h-7 md:w-8 md:h-8" />
               </a>
             ))}
           </div>

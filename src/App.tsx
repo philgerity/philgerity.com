@@ -114,9 +114,9 @@ function App() {
                role="presentation"></div>
           <div className="absolute inset-0 bg-black/25 z-1" role="presentation"></div>
           
-          <div className="relative text-center z-10 mt-80">
-            <h1 className="text-6xl font-bold mb-2 text-white animate-fade-in">Phil Gerity</h1>
-            <p className="text-xl text-gray-200 animate-type-writer" role="doc-subtitle">Product Leader | Maker</p>
+          <div className="relative text-center z-10 mt-16 md:mt-20">
+            <h1 className="text-4xl md:text-6xl font-bold mb-2 text-white animate-fade-in">Phil Gerity</h1>
+            <p className="text-lg md:text-xl text-gray-200 animate-type-writer" role="doc-subtitle">Product Leader | Maker</p>
           </div>
         </section>
         <Learn />
@@ -128,12 +128,12 @@ function App() {
 
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-8 right-8 p-3 bg-blue-600 text-white rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
+        className={`fixed bottom-4 right-4 md:bottom-8 md:right-8 p-3 bg-blue-600 text-white rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
           showBackToTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
         }`}
         aria-label="Back to top"
       >
-        <ArrowUp className="w-6 h-6" aria-hidden="true" />
+        <ArrowUp className="w-5 h-5 md:w-6 md:h-6" aria-hidden="true" />
       </button>
     </div>
   );
