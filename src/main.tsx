@@ -1,5 +1,6 @@
 import { StrictMode, lazy, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
+import '@fontsource/roboto';
 import ErrorBoundary from './components/ErrorBoundary';
 import LoadingSpinner from './components/LoadingSpinner';
 import { registerSW } from './lib/serviceWorker';

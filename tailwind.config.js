@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Electrolize', 'sans-serif'],
+        sans: ['Roboto', 'sans-serif'],
       },
       transitionProperty: {
         'height': 'height',

@@ -113,12 +113,12 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="section-height py-20 bg-white">
+    <section id="contact" className="section-height py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center mb-16">Get in Touch</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">Get in Touch</h2>
         
         {/* Social Links */}
-        <div className="max-w-2xl mx-auto mb-12">
+        <div className="max-w-2xl mx-auto mb-8">
           <div className="text-center">
             <h3 className="text-2xl font-semibold mb-4">Connect With Me</h3>
             <p className="text-gray-600 mb-8">

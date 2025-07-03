@@ -87,12 +87,12 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="section-height py-20 bg-white">
+    <section id="about" className="section-height py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center mb-16">About Me</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
 
         {/* Profile Image */}
-        <div className="flex justify-center mb-16">
+        <div className="flex justify-center mb-12">
           <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-xl">
             <img
               src="/phil-gerity-2.jpg"
@@ -103,7 +103,7 @@ const About = () => {
         </div>
 
         {/* Career Timeline */}
-        <div className="mb-16">
+        <div className="mb-12">
           <h3 className="text-2xl font-semibold text-center mb-4">Career Journey</h3>
           <div className="text-gray-600 max-w-3xl mx-auto text-center mb-4">
             <p className="mb-4">

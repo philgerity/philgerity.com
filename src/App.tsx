@@ -103,7 +103,7 @@ function App() {
       <Navigation theme={theme} setTheme={setTheme} />
       <main id="main-content" tabIndex={-1}>
         <section 
-          className="section-height relative flex items-center justify-center bg-cover bg-center overflow-hidden"
+          className="hero-section relative flex items-start justify-center bg-cover bg-center overflow-hidden"
           aria-label="Introduction"
         >
           <div className="hero-parallax absolute inset-0 bg-cover bg-center"
@@ -114,9 +114,9 @@ function App() {
                role="presentation"></div>
           <div className="absolute inset-0 bg-black/25 z-1" role="presentation"></div>
           
-          <div className="relative text-center z-10">
+          <div className="relative text-center z-10 mt-80">
             <h1 className="text-6xl font-bold mb-2 text-white animate-fade-in">Phil Gerity</h1>
-            <p className="text-xl text-gray-200 mb-36 animate-type-writer" role="doc-subtitle">Product Leader | Maker</p>
+            <p className="text-xl text-gray-200 animate-type-writer" role="doc-subtitle">Product Leader | Maker</p>
           </div>
         </section>
         <Learn />
