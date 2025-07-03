@@ -76,8 +76,8 @@ const Blog = () => {
 
   if (loading) {
     return (
-      <section id="blog" className="section-height py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="blog" className="section-height py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 section-modern">
           <h2 className="text-4xl font-bold text-center mb-12">Product Byte Blog</h2>
           <div className="flex justify-center items-center h-64">
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
@@ -89,11 +89,11 @@ const Blog = () => {
 
   if (error) {
     return (
-      <section id="blog" className="section-height py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center mb-12">Product Byte Blog</h2>
-          <div className="flex justify-center items-center h-64">
-            <div className="text-center">
+              <section id="blog" className="section-height py-12 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 section-modern">
+            <h2 className="text-4xl font-bold text-center mb-12">Product Byte Blog</h2>
+            <div className="flex justify-center items-center h-64">
+              <div className="text-center">
               <p className="text-red-500 mb-4">{error}</p>
               <button 
                 onClick={() => window.location.reload()}
@@ -109,8 +109,8 @@ const Blog = () => {
   }
 
   return (
-    <section id="blog" className="section-height py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="blog" className="section-height py-12 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 section-modern">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Product Byte Blog</h2>
           <a 

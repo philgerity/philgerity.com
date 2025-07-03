@@ -87,8 +87,8 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="section-height py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="section-height py-12 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 section-modern">
         <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
 
         {/* Profile Image */}
