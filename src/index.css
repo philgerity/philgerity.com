@@ -1,7 +1,4 @@
-@import '@fontsource/playfair-display/700.css';
-@import '@fontsource/playfair-display/900.css';
-@import '@fontsource/lora/400.css';
-@import '@fontsource/lora/600.css';
+/* Open Sans is loaded via Google Fonts link in index.html */
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +7,7 @@
 /* Base styles */
 html {
   scroll-behavior: smooth;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;

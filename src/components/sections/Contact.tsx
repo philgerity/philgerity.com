@@ -40,7 +40,7 @@ const Contact = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    
+
     if (touched[name]) {
       const error = validateField(name, value);
       setErrors(prev => ({ ...prev, [name]: error }));
@@ -49,7 +49,7 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Validate all fields
     const newErrors: FormErrors = {};
     Object.keys(formData).forEach(key => {
@@ -113,10 +113,10 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="section-height py-20 md:py-32 bg-cream-50">
+    <section id="contact" className="section-height py-10 md:py-16 bg-cream-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 section-modern">
-        <h2 className="font-serif text-4xl md:text-6xl font-bold text-center mb-16 md:mb-20 text-gray-900">Get in Touch</h2>
-        
+        <h2 className="font-serif text-4xl md:text-6xl font-bold text-center mb-16 md:mb-20 text-gray-900">Contact</h2>
+
         {/* Social Links */}
         <div className="max-w-2xl mx-auto mb-8">
           <div className="text-center">
@@ -179,9 +179,8 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       onBlur={handleBlur}
-                      className={`w-full px-4 py-2 border rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
-                        errors.name && touched.name ? 'border-red-500' : 'border-gray-300'
-                      }`}
+                      className={`w-full px-4 py-2 border rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent ${errors.name && touched.name ? 'border-red-500' : 'border-gray-300'
+                        }`}
                       disabled={formStatus === 'submitting'}
                     />
                     {errors.name && touched.name && (
@@ -201,9 +200,8 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       onBlur={handleBlur}
-                      className={`w-full px-4 py-2 border rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
-                        errors.email && touched.email ? 'border-red-500' : 'border-gray-300'
-                      }`}
+                      className={`w-full px-4 py-2 border rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent ${errors.email && touched.email ? 'border-red-500' : 'border-gray-300'
+                        }`}
                       disabled={formStatus === 'submitting'}
                     />
                     {errors.email && touched.email && (
@@ -223,9 +221,8 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleChange}
                       onBlur={handleBlur}
-                      className={`w-full px-4 py-2 border rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
-                        errors.message && touched.message ? 'border-red-500' : 'border-gray-300'
-                      }`}
+                      className={`w-full px-4 py-2 border rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent ${errors.message && touched.message ? 'border-red-500' : 'border-gray-300'
+                        }`}
                       disabled={formStatus === 'submitting'}
                     />
                     {errors.message && touched.message && (
