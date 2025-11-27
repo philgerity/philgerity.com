@@ -113,15 +113,15 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="section-height py-12 bg-gray-50">
+    <section id="contact" className="section-height py-20 md:py-32 bg-cream-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 section-modern">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Get in Touch</h2>
+        <h2 className="font-serif text-4xl md:text-6xl font-bold text-center mb-16 md:mb-20 text-gray-900">Get in Touch</h2>
         
         {/* Social Links */}
         <div className="max-w-2xl mx-auto mb-8">
           <div className="text-center">
-            <h3 className="text-2xl font-semibold mb-4">Connect With Me</h3>
-            <p className="text-gray-600 mb-8">
+            <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4 text-gray-900">Connect With Me</h3>
+            <p className="text-gray-600 mb-8 text-lg leading-relaxed">
               Feel free to reach out through email or connect with me on social media.
             </p>
           </div>
@@ -144,7 +144,7 @@ const Contact = () => {
           <div className="text-center">
             <button
               onClick={() => setShowForm(true)}
-              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transform hover:scale-105 transition-all duration-300"
+              className="inline-flex items-center px-8 py-4 bg-blue-600 text-white rounded-lg text-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transform hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg"
             >
               Send me an email
             </button>

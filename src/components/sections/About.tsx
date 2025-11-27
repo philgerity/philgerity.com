@@ -87,9 +87,9 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="section-height py-12 bg-gray-50">
+    <section id="about" className="section-height py-20 md:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 section-modern">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">About Me</h2>
+        <h2 className="font-serif text-4xl md:text-6xl font-bold text-center mb-16 md:mb-20 text-gray-900">About Me</h2>
 
         {/* Profile Image */}
         <div className="flex justify-center mb-12">
@@ -104,9 +104,9 @@ const About = () => {
 
         {/* Career Timeline */}
         <div className="mb-12">
-          <h3 className="text-2xl font-semibold text-center mb-4">Career Journey</h3>
-          <div className="text-gray-600 max-w-3xl mx-auto text-center mb-4">
-            <p className="mb-4">
+          <h3 className="font-serif text-3xl md:text-4xl font-bold text-center mb-6 text-gray-900">Career Journey</h3>
+          <div className="text-gray-600 max-w-3xl mx-auto text-center mb-8">
+            <p className="mb-6 text-lg leading-relaxed">
               I enjoy tackling complex problems by designing innovative business models and products. My experience spans three separate startups at Microsoft (two of which I cofounded, Partner Center and Windows 365), and one pre-IPO startup at Smartsheet. I'm currently at Microsoft as the product leader for Windows Cloud end user experiences.
             </p>
             <a 

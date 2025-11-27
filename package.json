@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/lora": "^5.2.8",
+    "@fontsource/playfair-display": "^5.2.8",
     "@fontsource/roboto": "^5.2.6",
     "@supabase/supabase-js": "^2.39.7",
     "lucide-react": "^0.344.0",

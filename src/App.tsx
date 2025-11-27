@@ -97,26 +97,62 @@ function App() {
 
   return (
     <div className={`min-h-screen transition-colors duration-300 ${
-      theme === 'dark' ? 'dark bg-gray-900' : 'bg-gray-50'
+      theme === 'dark' ? 'dark bg-gray-900' : 'bg-cream-100'
     }`}>
       <SkipLink />
       <Navigation theme={theme} setTheme={setTheme} />
       <main id="main-content" tabIndex={-1}>
         <section 
-          className="hero-section relative flex items-start justify-center bg-cover bg-center overflow-hidden"
+          className="hero-section relative bg-cream-100 overflow-hidden"
           aria-label="Introduction"
         >
-          <div className="hero-parallax absolute inset-0 bg-cover bg-center"
-               style={{
-                 backgroundImage: 'url("/phil-gerity.jpg")',
-                 transform: 'translateY(var(--scroll-offset, 0))'
-               }}
-               role="presentation"></div>
-          <div className="absolute inset-0 bg-black/25 z-1" role="presentation"></div>
-          
-          <div className="relative text-center z-10 mt-16 md:mt-20">
-            <h1 className="text-4xl md:text-6xl font-bold mb-2 text-white animate-fade-in">Phil Gerity</h1>
-            <p className="text-lg md:text-xl text-gray-200 animate-type-writer" role="doc-subtitle">Product Leader | Maker</p>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-16">
+              {/* Circular Profile Photo */}
+              <div className="flex-shrink-0">
+                <img 
+                  src="/phil-gerity.jpg" 
+                  alt="Phil Gerity"
+                  className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-xl ring-4 ring-white/50 animate-fade-in"
+                />
+              </div>
+              
+              {/* Content */}
+              <div className="flex-1 text-center md:text-left">
+                <h1 className="font-serif font-bold text-5xl md:text-7xl lg:text-8xl mb-4 text-gray-900 leading-tight animate-fade-in">
+                  Phil Gerity
+                </h1>
+                <p className="text-xl md:text-2xl text-gray-700 mb-6 animate-fade-in animate-delay-100" role="doc-subtitle">
+                  Product Leader | Maker
+                </p>
+                <p className="text-base md:text-lg text-gray-600 max-w-2xl mb-8 leading-relaxed animate-fade-in animate-delay-200">
+                  I'm a product leader at Microsoft, building innovative experiences for Windows 365 and Azure Virtual Desktop. 
+                  My passion is designing products that solve complex problems and create meaningful impact.
+                </p>
+                
+                {/* Social Links */}
+                <div className="flex gap-4 justify-center md:justify-start animate-fade-in animate-delay-300">
+                  <a href="https://www.linkedin.com/in/philgerity/" 
+                     target="_blank" 
+                     rel="noopener noreferrer"
+                     className="text-gray-600 hover:text-blue-600 transition-colors"
+                     aria-label="LinkedIn">
+                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                  </a>
+                  <a href="https://twitter.com/philgerity" 
+                     target="_blank" 
+                     rel="noopener noreferrer"
+                     className="text-gray-600 hover:text-blue-400 transition-colors"
+                     aria-label="Twitter">
+                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <Learn />
