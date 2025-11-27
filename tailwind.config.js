@@ -6,6 +6,24 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
+        serif: ['Playfair Display', 'serif'],
+        body: ['Lora', 'Georgia', 'serif'],
+      },
+      colors: {
+        cream: {
+          50: '#FDFCFB',
+          100: '#FAF9F6',
+          200: '#F5F5F0',
+          300: '#EEEEE8',
+          400: '#E5E5DC',
+          500: '#D9D9CC',
+        },
+        warm: {
+          50: '#FFFBF5',
+          100: '#FFF7ED',
+          200: '#FFEFD5',
+          300: '#FFE4B8',
+        },
       },
       transitionProperty: {
         'height': 'height',
